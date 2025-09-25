@@ -137,3 +137,7 @@ flowchart TD
   g_all --> g_ready
   ui --> g_ready
   g_ready --> T_ALPHA --> T_BETA --> T_RELEASE --> END
+
+  %% Критический путь — выделение узлов
+  classDef critNode fill:#fdecea,stroke:#d32f2f,stroke-width:3px,color:#b71c1c;
+  class START,t4_1_1,t1_3,t1_4,t8_1,t8_2,g_clips,g_all,g_ready,T_ALPHA,T_BETA,T_RELEASE,END critNode;
